@@ -1,93 +1,103 @@
 # CHATBOT
 
-## Sobre o Projeto
+## About the Project
 
-Este projeto consiste no desenvolvimento de um assistente virtual inteligente focado em educação tecnológica e suporte ao desenvolvedor. Construído em Python através do script `dsa_assistente.py`, a aplicação cria um chatbot interativo que consome um modelo de linguagem de grande escala (LLM) por meio de uma integração direta de chaves de API.
+This project consists of the development of an intelligent virtual assistant focused on technology education and developer support. Built in Python through the `dsa_assistente.py` script, the application creates an interactive chatbot that consumes a large language model (LLM) through a direct API integration.
 
-O grande diferencial do assistente está na sua especialização e blindagem lógica: o código do projeto define uma diretriz sistêmica estrita (system prompt) antes de processar as requisições. Esta instrução força a Inteligência Artificial a atuar exclusivamente como uma especialista em Python, recusando ou redirecionando qualquer questionamento que fuja do escopo da linguagem, garantindo uma ferramenta de consulta precisa e focada.
-
----
-
-## Funcionalidades
-
-* Interface de usuário limpa, amigável e totalmente responsiva integrada ao navegador.
-* Autenticação e conexão segura com o modelo de IA através do gerenciamento de chaves de API.
-* Engenharia de Prompt (*System Prompting*) aplicada no código para restringir o escopo de atuação do modelo.
-* Filtro de escopo automatizado que restringe as respostas e o suporte técnico unicamente para tópicos relacionados à linguagem Python.
+The main feature of the assistant is its specialization and logical scope control. The project defines a strict system instruction (system prompt) before processing user requests. This instruction guides the AI to act exclusively as a Python specialist, refusing or redirecting questions outside the language's scope, creating a more focused technical support tool.
 
 ---
 
-## Tecnologias Utilizadas
+## Features
+
+* Clean, user-friendly, and responsive web interface.
+* Authentication and connection to the AI model through API key management.
+* Prompt engineering (*system prompting*) applied in the application code to restrict the model's scope.
+* Automated scope filtering that limits responses and technical support to topics related to the Python programming language.
+
+---
+
+## Technologies Used
 
 * **Python 3**
-* **Streamlit** (Biblioteca para construção de interfaces web e dashboards de dados)
-* **API de LLM** (Integração com provedor de modelo de linguagem)
+* **Streamlit** (framework for building web applications and data dashboards)
+* **LLM API** (integration with a large language model provider)
 
 ---
 
-## Objetivo
+## Objective
 
-O principal objetivo deste projeto é explorar o desenvolvimento de aplicações voltadas à Inteligência Artificial Generativa e design de prompt (*Prompt Engineering*). O foco técnico está em compreender como acoplar interfaces visuais modernas em Python sem a necessidade de frameworks complexos de front-end (usando o Streamlit), gerenciar dependências de projetos locais de IA de forma isolada com ambientes virtuais (`.venv`) e parametrizar o comportamento e as restrições de uma LLM.
-
----
-
-## Aprendizados
-
-Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
-
-* Isolamento e gerenciamento de escopo de dependências utilizando ambientes virtuais do Python (`.venv`).
-* Criação de arquivos de manifesto de pacotes (`requirements.txt`) para listar e instalar facilmente todas as bibliotecas de terceiros necessárias.
-* Utilização do ecossistema Streamlit para renderizar caixas de chat, históricos de conversação e inputs de texto de forma dinâmica.
-* Configuração e injeção de prompts de sistema para guiar e blindar o comportamento ético e conceitual da Inteligência Artificial.
-* Gerenciamento de credenciais e chaves de acesso a serviços de terceiros de forma segura.
+The main objective of this project is to explore the development of Generative AI applications and prompt engineering techniques. The technical focus is on understanding how to build modern user interfaces with Python without relying on complex front-end frameworks by using Streamlit, managing local AI project dependencies through isolated virtual environments (`.venv`), and configuring the behavior and scope of an LLM.
 
 ---
 
-## Como Executar
+## Learning Outcomes
 
-1. Certifique-se de ter o Python instalado em sua máquina.
-2. Acesse a pasta do projeto através do terminal:
+During the development of this project, the following concepts were applied:
+
+* Isolating and managing project dependencies using Python virtual environments (`.venv`).
+* Creating package manifest files (`requirements.txt`) to list and install all required third-party libraries.
+* Using the Streamlit ecosystem to dynamically render chat interfaces, conversation histories, and text inputs.
+* Configuring and injecting system prompts to guide and constrain the behavior of an AI model.
+* Managing credentials and API keys for third-party services securely.
+
+---
+
+## How to Run
+
+1. Make sure Python is installed on your machine.
+2. Navigate to the project folder through the terminal:
+
 ```bash
 cd CHATBOT
 ```
 
-3. Ative o seu ambiente virtual (comandos variam por sistema operacional):
+3. Activate the virtual environment. Commands vary depending on the operating system:
 
-- Windows: .venv\Scripts\activate
+**Windows:**
 
-- Linux/macOS: source .venv/bin/activate
+```bash
+.venv\Scripts\activate
+```
 
-4. Instale as dependências listadas no projeto:
+**Linux/macOS:**
+
+```bash
+source .venv/bin/activate
+```
+
+4. Install the dependencies listed in the project:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Certifique-se de configurar sua chave de API nas configurações ou variáveis de ambiente do projeto.
+5. Make sure your API key is configured through the project's configuration or environment variables.
 
-5. Execute a aplicação por meio do comando do Streamlit:
+6. Run the application using Streamlit:
 
-```Bash
+```bash
 streamlit run dsa_assistente.py
 ```
 
 ---
 
-## Estrutura do Projeto
+## Project Structure
 
 ```text
 CHATBOT/
 │
-├── .venv/               # Ambiente virtual com as dependências instaladas
-├── .vscode/             # Configurações de workspace do editor
-├── dsa_assistente.py    # Script principal do chatbot e interface Streamlit
-├── requirements.txt     # Listagem de dependências do projeto para instalação
+├── .venv/               # Virtual environment with installed dependencies
+├── .vscode/             # Editor workspace configuration
+├── dsa_assistente.py    # Main chatbot and Streamlit interface
+├── requirements.txt     # Project dependency list
 └── README.md
 ```
 
 ---
 
-## Licença
-Este projeto foi desenvolvido exclusivamente para fins educacionais e de aprendizado.
+## License
 
-Desenvolvido como prática de desenvolvimento de ferramentas inteligentes de IA, engenharia de prompt e criação de interfaces web ágeis com Streamlit e Python.
+This project was developed exclusively for educational and learning purposes.
+
+Developed as a hands-on exercise in building intelligent AI tools, prompt engineering, and rapid web application development using Streamlit and Python.
